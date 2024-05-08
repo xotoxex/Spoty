@@ -1,0 +1,13 @@
+.DivBtn {
+  user-select: none;
+  position: relative;
+  left: 5px;
+  top: 20px;
+  font-size: 55px;
+  padding-bottom: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.DivBtn:hover {
+  color: rgba(0, 0, 0, 0.7);
+}

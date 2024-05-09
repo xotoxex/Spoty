@@ -25,9 +25,9 @@
 
 .MyBtnSgn {
   color: black;
-  font-size: 20px;
-  background-color: orange;
-  border: 3px solid orangered;
+  font-size: 25px;
+  background-color: peachpuff;
+  border: 3px solid orange;
   cursor: pointer;
   user-select: none;
   border-radius: 10px;
@@ -36,4 +36,34 @@
   position: absolute;
   left: 930px;
   top: 20px;
+}
+
+.UiLoginSubmit {
+  color: orangered;
+  font-size: 20px;
+  background: transparent;
+  border: 3px solid orange;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  height: 70px;
+  width: 100px;
+  position: absolute;
+  top: 400px;
+  left: 705px;
+}
+
+.UiSignSubmit {
+  color: orangered;
+  font-size: 20px;
+  background-color: peachpuff;
+  border: 3px solid orange;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  height: 70px;
+  width: 100px;
+  position: absolute;
+  top: 400px;
+  left: 705px;
 }

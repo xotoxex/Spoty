@@ -1,0 +1,30 @@
+.UiLoginLink {
+  text-decoration: none;
+  position: absolute;
+  top: 500px;
+  left: 810px;
+  color: peachpuff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.UiLoginLink:visited {
+  color: black;
+  color: peachpuff;
+}
+
+.UiSignLink {
+  text-decoration: none;
+  position: absolute;
+  top: 500px;
+  left: 810px;
+  color: peachpuff;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.UiSignLink:visited {
+  color: black;
+  color: peachpuff;
+}

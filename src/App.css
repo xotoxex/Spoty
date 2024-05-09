@@ -64,6 +64,7 @@
   top: 20px;
   width: 550px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  user-select: none;
 }
 
 .textt {
@@ -72,5 +73,19 @@
   position: absolute;
   top: 20px;
   left: 40px;
+  user-select: none;
+}
+
+.logintext {
+  position: absolute;
+  top: 483px;
+  left: 640px;
+  user-select: none;
+}
+
+.signtext {
+  position: absolute;
+  top: 483px;
+  left: 640px;
   user-select: none;
 }

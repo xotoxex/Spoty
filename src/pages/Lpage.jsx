@@ -15,6 +15,7 @@ function Lpage() {
 
   const Entering = () => {
     Setscreen("initial");
+    Setbol("true");
   };
   const LoginCheck = () => {
     evalue === user && evalue !== "" && cvalue === passw

@@ -94,3 +94,11 @@
   width: 1920px;
   height: 1080px;
 }
+
+.nickname {
+  position: absolute;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  bottom: -37px;
+  left: 520px;
+}

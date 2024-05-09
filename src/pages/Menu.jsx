@@ -5,22 +5,11 @@ import Playlist from "../components/Playlist";
 import { useState } from "react";
 import Options from "../components/Options";
 
-function Menu({ actt3 }) {
+function Menu() {
   const [check, Setcheck] = useState("gray");
-  const [logmenu, Setlogmenu] = useState("initial");
 
   const showoption = (color1) => {
     Setcheck(color1);
-  };
-
-  const switchPage2 = (logoptt) => {
-    Setlogmenu(logoptt);
-  };
-
-  const handleSwitchPage2 = () => {
-    switchPage2();
-    const logmenuu = logmenu;
-    actt3(logmenuu);
   };
 
   return (
@@ -37,11 +26,7 @@ function Menu({ actt3 }) {
         <Scrolling props={check}></Scrolling>
       </div>
       <div className="options">
-        <Options
-          props={check}
-          actt2={switchPage2}
-          onClick={handleSwitchPage2}
-        ></Options>
+        <Options props={check}></Options>
       </div>
     </div>
   );

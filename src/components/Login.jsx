@@ -4,10 +4,8 @@ import UiDiv from "../UI/UiDiv";
 import classes from "../UI/MyButton.module.css";
 import { useContext } from "../App";
 
-function Login({ actt }) {
+function Login() {
   const { Setscreen } = useContext();
-
-  const [log, Setlog] = useState("initial");
 
   const LoginPage = () => {
     Setscreen("login");
@@ -17,24 +15,12 @@ function Login({ actt }) {
     Setscreen("signup");
   };
 
-  const handleLogin = () => {
-    LoginPage();
-    const logg = log;
-    actt(logg);
-  };
-
-  const handleSignup = () => {
-    SignPage();
-    const logg = log;
-    actt(logg);
-  };
-
   return (
     <UiDiv>
-      <MyButton className={classes.MyBtnLgn} onClick={handleLogin}>
+      <MyButton className={classes.MyBtnLgn} onClick={LoginPage}>
         Login
       </MyButton>
-      <MyButton className={classes.MyBtnSgn} onClick={handleSignup}>
+      <MyButton className={classes.MyBtnSgn} onClick={SignPage}>
         SignUp
       </MyButton>
     </UiDiv>

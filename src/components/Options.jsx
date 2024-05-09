@@ -1,19 +1,10 @@
 import React, { useState } from "react";
 import UiInput from "../UI/UiInput";
 import Login from "./Login";
+import { useContext } from "../App";
 
-function Options({ props, actt2 }) {
-  const [logopt, Setlogopt] = useState("initial");
-
-  const Switch = (logg) => {
-    Setlogopt(logg);
-  };
-
-  const SwitchPage = () => {
-    Switch();
-    const logoptt = logopt;
-    actt2(logoptt);
-  };
+function Options({ props }) {
+  const { Setscreen, user, passw, bol } = useContext();
 
   return (
     <div>
@@ -21,11 +12,16 @@ function Options({ props, actt2 }) {
         {props === "black" ? (
           <UiInput className="searchbar" placeholder="Search" />
         ) : (
-          <strong className="textt">Welcome to Spoty</strong>
+          <div>
+            {bol === "true" ? (
+              <strong className="textt">Welcome to Spoty {user}</strong>
+            ) : (
+              <strong className="textt">Welcome to Spoty</strong>
+            )}
+          </div>
         )}
       </div>
-
-      <Login actt={Switch} onClick={SwitchPage} />
+      <div>{bol === "true" ? <div></div> : <Login></Login>}</div>
     </div>
   );
 }

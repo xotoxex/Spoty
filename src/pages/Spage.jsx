@@ -13,6 +13,7 @@ function Spage() {
   const SignUp = () => {
     Setuser(evalue);
     Setpassw(cvalue);
+    Loginfroms();
   };
   const { Setscreen, Setuser, Setpassw } = useContext();
   const [evalue, Setevalue] = useState("");

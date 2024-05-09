@@ -20,6 +20,7 @@ function App() {
   const [screen, Setscreen] = useState("initial");
   const [user, Setuser] = useState("");
   const [passw, Setpassw] = useState("");
+  const [bol, Setbol] = useState("false");
 
   return (
     <ContextProvider.Provider
@@ -30,6 +31,8 @@ function App() {
         Setuser,
         passw,
         Setpassw,
+        bol,
+        Setbol,
       }}
     >
       <div className="app">

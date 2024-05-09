@@ -89,3 +89,8 @@
   left: 640px;
   user-select: none;
 }
+
+.app {
+  width: 1920px;
+  height: 1080px;
+}

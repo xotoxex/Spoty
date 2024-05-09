@@ -18,12 +18,18 @@ export const useContext = () => {
 
 function App() {
   const [screen, Setscreen] = useState("initial");
+  const [user, Setuser] = useState("");
+  const [passw, Setpassw] = useState("");
 
   return (
     <ContextProvider.Provider
       value={{
         screen,
         Setscreen,
+        user,
+        Setuser,
+        passw,
+        Setpassw,
       }}
     >
       <div className="app">

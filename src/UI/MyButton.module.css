@@ -7,3 +7,33 @@
   cursor: pointer;
   user-select: none;
 }
+
+.MyBtnLgn {
+  color: orangered;
+  font-size: 20px;
+  background: transparent;
+  border: 3px solid orange;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  height: 70px;
+  width: 100px;
+  position: absolute;
+  left: 800px;
+  top: 20px;
+}
+
+.MyBtnSgn {
+  color: black;
+  font-size: 20px;
+  background-color: orange;
+  border: 3px solid orangered;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  height: 70px;
+  width: 100px;
+  position: absolute;
+  left: 930px;
+  top: 20px;
+}

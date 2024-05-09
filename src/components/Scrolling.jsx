@@ -1,6 +1,6 @@
 import React from "react";
 
-function Scrolling() {
+function Scrolling({ props }) {
   return <div></div>;
 }
 

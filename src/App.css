@@ -41,3 +41,36 @@
   top: 10px;
   user-select: none;
 }
+
+.options {
+  width: 1570px;
+  height: 112px;
+  border-radius: 21px 21px 0px 0px;
+  background: rgba(206, 179, 145, 0.7);
+  position: absolute;
+  bottom: 970px;
+  left: 334px;
+}
+
+.searchbar {
+  border-radius: 30px;
+  font-size: 60px;
+  background-image: url(search.png);
+  background-repeat: no-repeat;
+  text-indent: 100px;
+  border-color: orange;
+  position: relative;
+  left: 40px;
+  top: 20px;
+  width: 550px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.textt {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  user-select: none;
+}

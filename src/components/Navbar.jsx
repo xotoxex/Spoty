@@ -4,18 +4,20 @@ import DivButton from "../UI/DivButton";
 import { useState } from "react";
 import UiDiv from "../UI/UiDiv";
 
-function Navbar() {
+function Navbar({ buttoncolor }) {
   const [color1, setcolor1] = useState("black");
   const [color2, setcolor2] = useState("gray");
 
   function Home() {
     setcolor1("black");
     setcolor2("gray");
+    buttoncolor(color1);
   }
 
   function Search() {
     setcolor1("gray");
     setcolor2("black");
+    buttoncolor(color1);
   }
 
   return (

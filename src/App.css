@@ -102,3 +102,23 @@
   bottom: -37px;
   left: 520px;
 }
+
+.rolldown {
+  position: absolute;
+  top: 110px;
+}
+
+.rolldown {
+  width: 1000px;
+  background: transparent;
+  border: 50px;
+  border-color: red;
+  position: absolute;
+  left: 80px;
+}
+
+.cards {
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+}

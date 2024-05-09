@@ -4,13 +4,17 @@ import Login from "./Login";
 import { useContext } from "../App";
 
 function Options({ props }) {
-  const { Setscreen, user, passw, bol } = useContext();
+  const { Setscreen, user, passw, bol, Setsearch } = useContext();
 
   return (
     <div>
       <div>
         {props === "black" ? (
-          <UiInput className="searchbar" placeholder="Search" />
+          <UiInput
+            className="searchbar"
+            placeholder="Search"
+            onChange={(e) => Setsearch(e.target.value)}
+          />
         ) : (
           <div>
             {bol === "true" ? (

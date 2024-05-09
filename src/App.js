@@ -21,6 +21,7 @@ function App() {
   const [user, Setuser] = useState("");
   const [passw, Setpassw] = useState("");
   const [bol, Setbol] = useState("false");
+  const [search, Setsearch] = useState("");
 
   return (
     <ContextProvider.Provider
@@ -33,6 +34,8 @@ function App() {
         Setpassw,
         bol,
         Setbol,
+        search,
+        Setsearch,
       }}
     >
       <div className="app">

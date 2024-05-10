@@ -15,3 +15,6 @@ The clone of Spotify on React
 
 The project has Navbar,SearchBar,Playlist,Feed,Authorization,Commentaries on posts
 
+That is very difficult to finish in 3 days
+
+

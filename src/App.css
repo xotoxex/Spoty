@@ -115,10 +115,29 @@
   border-color: red;
   position: absolute;
   left: 80px;
+  cursor: pointer;
 }
 
 .cards {
   margin: 20px;
   background-color: white;
   padding: 20px;
+}
+
+.author,
+.musicname,
+.year {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  top: 20px;
+  left: 40px;
+  user-select: none;
+  text-align: center;
+}
+
+.warning {
+  position: absolute;
+  top: 800px;
 }

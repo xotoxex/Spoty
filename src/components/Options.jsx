@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import UiInput from "../UI/UiInput";
 import Login from "./Login";
 import { useContext } from "../App";
+import { data } from "../Data";
 
 function Options({ props }) {
   const { Setscreen, user, passw, bol, Setsearch } = useContext();

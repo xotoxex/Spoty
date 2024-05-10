@@ -28,6 +28,7 @@ function Menu() {
       <div className="options">
         <Options props={check}></Options>
       </div>
+      <img src="https://random.imagecdn.app/200/200"></img>
     </div>
   );
 }

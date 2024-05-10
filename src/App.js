@@ -11,6 +11,7 @@ import Lpage from "./pages/Lpage";
 import Spage from "./pages/Spage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PostPage from "./pages/PostPage";
+import { useEffect } from "react";
 // import rtmp from "./rtmp";
 
 const ContextProvider = createContext(null);
@@ -20,17 +21,6 @@ export const useContext = () => {
 };
 
 function App() {
-  // Example usage:
-  // const imageUrl = "https://random.imagecdn.app/200/200";
-  // rtmp
-  //   .getRedirectedUrl(imageUrl)
-  //   .then((redirectedUrl) => {
-  //     console.log("Redirected URL:", redirectedUrl);
-  //   })
-  //   .catch((error) => {
-  //     console.error("Error:", error);
-  //   });
-
   const [screen, Setscreen] = useState("initial");
   const [user, Setuser] = useState("");
   const [passw, Setpassw] = useState("");

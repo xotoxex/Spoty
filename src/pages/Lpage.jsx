@@ -7,6 +7,7 @@ import classess from "../UI/MyButton.module.css";
 import design from "../UI/UiA.module.css";
 import { useContext } from "../App";
 import { useState } from "react";
+import BackButton from "../components/BackButton";
 
 function Lpage() {
   const { Setscreen, user, passw, Setbol } = useContext();
@@ -17,6 +18,7 @@ function Lpage() {
     Setscreen("initial");
     Setbol("true");
   };
+
   const LoginCheck = () => {
     evalue === user && evalue !== "" && cvalue === passw
       ? Entering()
@@ -49,6 +51,7 @@ function Lpage() {
         Sign Up
       </UiA>
       <p className="logintext">Do not have an account?</p>
+      <BackButton></BackButton>
     </div>
   );
 }

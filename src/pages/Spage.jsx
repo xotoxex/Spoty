@@ -8,6 +8,7 @@ import design from "../UI/UiA.module.css";
 import { useContext } from "../App";
 import { useRef } from "react";
 import { useState } from "react";
+import BackButton from "../components/BackButton";
 
 function Spage() {
   const SignUp = () => {
@@ -41,6 +42,7 @@ function Spage() {
         Log in
       </UiA>
       <p className="signtext">Already have an account?</p>
+      <BackButton></BackButton>
     </div>
   );
 }

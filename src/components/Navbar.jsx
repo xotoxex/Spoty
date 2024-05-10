@@ -25,7 +25,9 @@ function Navbar({ buttoncolor }) {
       <strong className="logo">Spoty</strong>
       <br></br>
       <UiDiv onClick={Home} style={{ color: color1 }}>
-        <DivButton>Home</DivButton>
+        <DivButton style={{ border: "1px", borderColor: color1 }}>
+          Home
+        </DivButton>
       </UiDiv>
       <UiDiv onClick={Search} style={{ color: color2 }}>
         <DivButton>Search</DivButton>

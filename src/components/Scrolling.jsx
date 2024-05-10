@@ -24,7 +24,7 @@ function Scrolling({ props }) {
               <div
                 className="card"
                 onClick={() =>
-                  bol === true
+                  bol === "true"
                     ? navigate("/musics/" + (index + 1))
                     : Setscreen("login")
                 }

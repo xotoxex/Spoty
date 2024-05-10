@@ -2,15 +2,25 @@ import React, { useState } from "react";
 import UiInput from "../UI/UiInput";
 import MyButton from "../UI/MyButton";
 import { useContext } from "../App";
+import { useParams } from "react-router-dom";
 
-function Comments() {
-  const { Setscreen, user, passw, Setbol } = useContext();
-  const [comm, Setcomm] = useState([{ nick: "", text: "", comment_id: 0 }]);
+function Comments({ params }) {
+  const { Setscreen, user, passw, Setbol, comm, Setcomm } = useContext();
+  const paramss = parseInt(params.id);
+
   const [ctext, Sctext] = useState("");
 
   const sendd = () => {
     ctext !== "" && user !== ""
-      ? Setcomm([...comm, { nick: user, text: ctext, comment_id: comm.length }])
+      ? Setcomm([
+          ...comm,
+          {
+            nick: user,
+            text: ctext,
+            comment_id: comm.length,
+            post_id: paramss,
+          },
+        ])
       : console.log("123");
     Sctext("");
   };
@@ -20,7 +30,7 @@ function Comments() {
       <div className="comments">
         <div>
           {comm
-            .filter((item) => item.nick !== "")
+            .filter((item) => item.nick !== "" && item.post_id === paramss)
             .map((item) => (
               <div key={item.comment_id}>
                 <div>{item.nick}</div>

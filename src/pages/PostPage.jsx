@@ -26,7 +26,7 @@ function PostPage() {
         <div className="author">by {data[indexx].Author}</div>
         <div className="year">{data[indexx].year}</div>
       </div>
-      <Comments></Comments>
+      <Comments params={params}></Comments>
       <strong className="warning">scroll up</strong>
       <button
         onClick={() => {

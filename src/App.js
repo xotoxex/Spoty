@@ -27,6 +27,9 @@ function App() {
   const [bol, Setbol] = useState("false");
   const [search, Setsearch] = useState("");
   const [currentpage, Setcurrentpage] = useState("1");
+  const [comm, Setcomm] = useState([
+    { nick: "", text: "", comment_id: 0, post_id: 0 },
+  ]);
 
   return (
     <ContextProvider.Provider
@@ -43,6 +46,8 @@ function App() {
         Setsearch,
         currentpage,
         Setcurrentpage,
+        comm,
+        Setcomm,
       }}
     >
       <BrowserRouter>

@@ -8,6 +8,7 @@ import { useContext } from "../App";
 import MyButton from "../UI/MyButton";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Review from "../components/Review";
 
 function PostPage() {
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ function PostPage() {
       </div>
 
       <Comments params={params}></Comments>
+      <Review params={params}></Review>
 
       <button
         onClick={() => {

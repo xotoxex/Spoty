@@ -30,6 +30,7 @@ function App() {
   const [comm, Setcomm] = useState([
     { nick: "", text: "", comment_id: 0, post_id: 0 },
   ]);
+  const [star, Setstar] = useState([{ rev: 0, post_id: 0 }]);
 
   return (
     <ContextProvider.Provider
@@ -48,6 +49,8 @@ function App() {
         Setcurrentpage,
         comm,
         Setcomm,
+        star,
+        Setstar,
       }}
     >
       <BrowserRouter>

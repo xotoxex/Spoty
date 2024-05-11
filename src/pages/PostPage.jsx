@@ -25,9 +25,11 @@ function PostPage() {
         <div className="musicname">{data[indexx].name}</div>
         <div className="author">by {data[indexx].Author}</div>
         <div className="year">{data[indexx].year}</div>
+        <img className="cover" src="https://random.imagecdn.app/150/150"></img>
       </div>
+
       <Comments params={params}></Comments>
-      <strong className="warning">scroll up</strong>
+
       <button
         onClick={() => {
           navigate("/");

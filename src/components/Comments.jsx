@@ -21,21 +21,20 @@ function Comments({ params }) {
             post_id: paramss,
           },
         ])
-      : console.log("123");
+      : alert("login to comment");
     Sctext("");
   };
 
   return (
     <div>
       <div className="comments">
-        <div>
+        <div className="outercom">
           {comm
             .filter((item) => item.nick !== "" && item.post_id === paramss)
             .map((item) => (
-              <div key={item.comment_id}>
-                <div>{item.nick}</div>
-                <div>{item.text}</div>
-                <div>{item.comment_id}</div>
+              <div className="innercom" key={item.comment_id}>
+                <strong className="nick">{item.nick}</strong>
+                <div className="commenttext">{item.text}</div>
               </div>
             ))}
         </div>

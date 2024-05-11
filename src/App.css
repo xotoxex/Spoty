@@ -135,7 +135,6 @@
   position: relative;
   top: 0px;
 
-  user-select: none;
   text-align: center;
 }
 
@@ -165,7 +164,7 @@
   /* display: flex; */
   justify-content: center;
   width: 800px;
-  height: 160px;
+  height: 310px;
   position: absolute;
   left: 370px;
 }
@@ -188,4 +187,40 @@
   position: relative;
   top: 20px;
   color: red;
+}
+
+.outercom {
+  background-color: white;
+  width: 800px;
+  padding: 5px;
+  border: 1px;
+  border-radius: 5px;
+}
+
+.innercom {
+  background-color: bisque;
+  padding: 10px;
+  margin: 10px;
+  word-wrap: break-word;
+}
+
+.comments {
+  position: absolute;
+  top: 400px;
+  left: 365px;
+}
+
+.cover {
+  border-radius: 90px;
+  position: relative;
+  left: 325px;
+  top: 30px;
+}
+
+.nick {
+  font-size: 19px;
+}
+
+.commenttext {
+  margin-top: 20px;
 }

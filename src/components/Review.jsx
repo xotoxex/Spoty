@@ -20,7 +20,7 @@ function Review({ params }) {
   };
 
   return (
-    <div>
+    <div className="stars">
       <div className="1" onClick={() => changeReview(1)}>
         {revnum > 0 ? (
           <i className="fa-solid fa-star"></i>

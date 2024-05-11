@@ -224,3 +224,18 @@
 .commenttext {
   margin-top: 20px;
 }
+
+.stars {
+  display: flex;
+  position: absolute;
+  top: 326px;
+  left: 540px;
+}
+
+.fa-star {
+  font-size: 60px;
+  margin-left: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: yellow;
+}

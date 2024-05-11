@@ -21,7 +21,7 @@ function Comments({ params }) {
             post_id: paramss,
           },
         ])
-      : alert("login to comment");
+      : alert("login or write something to comment");
     Sctext("");
   };
 

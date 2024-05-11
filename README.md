@@ -30,7 +30,7 @@ The same thing is for the Login and Sign In pages. They are all located in the l
 
 **PostPage**
 
-Detailed view page shows the elements of objects (local API) which id  matches with the id of the page. Also, the cover for the musics is demonstrated. The review and comments abuse useContext to add objects to the array which is located in App.js . Then, they use filter, to show only content which post_id corresponds to the post_id of the PostPage.
+Detailed view page shows the elements of objects (local API) which id  matches with the id of the page. Also, the cover for the musics is demonstrated. The review and comments abuse useContext to add objects to the array which is located in App.js . Then, they use filter, to show only content which post_id corresponds to the id of the PostPage.
 
 To mention, in order to catch the id of the detailed view page useParams() was used.
 
